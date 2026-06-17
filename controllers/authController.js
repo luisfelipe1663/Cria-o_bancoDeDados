@@ -15,7 +15,7 @@ async function cadastrarUsuario(req, res) {
         };
         //Valida se já existe um usuario com o mesmo e-mail
         const [usuarioExistente] = await conexao.query(
-            'SELCT *FROM usuario WHERW email = ?', [email]
+            'SELECT *FROM usuario WHERE email = ?', [email]
         );
 
         //Se o usuario já existir, redireciona para cadastro com mensagem de erro
