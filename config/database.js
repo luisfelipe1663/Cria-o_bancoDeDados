@@ -16,4 +16,4 @@ const conexao = mysql.createPool({
 });
 
 // Exporta a conexão 
-module.exports = conexao
+module.exports = conexao;
