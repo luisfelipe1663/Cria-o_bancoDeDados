@@ -44,7 +44,7 @@ async function realizarLogin(req, res){
 
         //Busca o usuario no banco de dados com base no e-mail e senha informados na tela de Login
         const[usuarios] = await conexao.query(
-            'SELECT * FROM usuario WHERE email = ? AND senha =?'
+            'SELECT * FROM usuario WHERE email = ? AND senha =?',
             [email,senha]
         );
 

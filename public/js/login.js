@@ -13,7 +13,7 @@ const cadastro = parametros.get('cadastro');
 //O usuario verá uma mensagem acima do formulario de login, dizendo que ele já pode fazer a realização do login, confirmando o cadastro bem sucedido.
 if (cadastro === "sucesso"){
     document.getElementById("mensagem").innerHTML = `
-    <div class="mensagem-sucesso>
+    <div class="mensagem-sucesso">
     Cadastro realizado com sucesso!Faça login para continuar.
     </div>
     `;
